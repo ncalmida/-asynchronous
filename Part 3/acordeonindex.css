@@ -1,0 +1,45 @@
+.acordeon{
+    background-color: lightgray;
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    
+}
+
+.acordeon .bloque{
+    background-color: rgb(100, 139, 179);
+    margin: 0 0 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.acordeon .h2{
+    background-color: lightgray;
+    margin: 0 0 1em;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.acordeon .contenido{
+    background-color:  rgb(100, 139, 179);
+    padding: 1em;
+    height: 0px;
+    padding: 0em;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.acordeon .bloque.activo .contenido{
+    height:4em
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsteelblue;
+}

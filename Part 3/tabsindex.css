@@ -1,0 +1,31 @@
+.contenedor{
+    width: 90%;
+    max-width: 120em;
+    padding: 1em;
+    background-color: lightgray;
+}
+.contenedor .ul{
+    width: 100%;
+    ;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contenedor .li{
+    background-color: lightgreen;
+    padding: 1em;
+    margin:0 1em 0 0;
+}
+.contenedor .subcontenedor{
+    min-height: 10vh;
+    background-color: lightsalmon;
+    position: relative;
+}
+.contenedor .bloque{
+    background-color: lightseagreen;
+    padding: 1em;
+    margin: 1em;
+    position: absolute;
+    top: 1em;
+}
