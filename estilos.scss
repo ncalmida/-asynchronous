@@ -1,0 +1,53 @@
+// Definición del mixin neo
+@mixin neo($color: rgba(0, 0, 0, 0.1), $blur: 1em, $spread: 1em) {
+    box-shadow: 0px 0px $blur $spread $color;
+  }
+  
+  .contenedor {
+      width: 90%;
+      max-width: 120em;
+      padding: 1em;
+      @include neo(rgba(0, 0, 0, 0.1), 1em, 1em);
+  }
+  
+  .contenedor .ul {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  
+  .contenedor .li {
+      padding: 1em;
+      margin: 0 2em 0 0;
+      transition: all 5s ease;
+      @include neo(rgba(0, 0, 0, 0.1), 1em, 1em);
+  }
+  
+  .contenedor .li.activo {
+      background-color: lightskyblue;
+      color: white;
+  }
+  
+  .contenedor .subcontenedor {
+      min-height: 10vh;
+      position: relative;
+  }
+  
+  .contenedor .bloque {
+      @include neo(rgba(0, 0, 0, 0.1), 1em, 1em);
+      padding: 1em;
+      margin: 1em;
+      position: absolute;
+      top: 2em;
+      opacity: 0;
+      transition: all 5s ease;
+      transform: translateY(50%);
+  }
+  
+  .contenedor .bloque.activo {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
